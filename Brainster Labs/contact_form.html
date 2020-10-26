@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Brainster</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/first.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+    <nav class="navbar navbar-default menu navbar-fixed-top" id="navbar">
+        <div class="container-fluid menu3">
+            <div class="row">
+
+                <div class="navbar-header">
+                    <div class="navigation">
+                        <div onclick="showSidebar()" class="toggle-nav">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+
+                        <div class="sidebar">
+                            <a onclick="closeSidebar()"><i class="fa fa-times"></i></a>
+                            <a href="https://www.brainster.io/marketpreneurs">Академија за маркетинг</a>
+                            <a href="http://codepreneurs.co/">Академија за програмирање</a>
+                            <a href="https://www.brainster.io/data-science">Академија за data science</a>
+                            <a href="https://www.brainster.io/design">Академија за дизајн</a>
+                            <a href="contact_form.html">Вработи наш студент</a>
+                        </div>
+                    </div>
+
+                    <a class="navbar-brand" href="index.html">
+                        <img alt="Brainster" src="assets/default.png" width="30px" height="30px">
+                        <p><b>Brainster</b></p>
+                    </a>
+                </div>
+
+
+                <div class="collapse navbar-collapse col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2"
+                    id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="https://www.brainster.io/marketpreneurs"><b>Академија за маркетинг</b></a></li>
+                        <li><a href="http://codepreneurs.co/"><b>Академија за програмирање</b></a></li>
+                        <li><a href="https://www.brainster.io/data-science"><b>Академија за data science</b></a></li>
+                        <li><a href="https://www.brainster.io/design"><b>Академија за дизајн</b></a></li>
+                        <li><a href="contact_form.html" class="btn">Вработи наш студент</a></li>
+
+                    </ul>
+                </div>
+                <ul class="ipadDropdown">
+                    <li><a href=""><b>Академии за: </b></a></li>
+                    <li><a href="https://www.brainster.io/marketpreneurs"><b>Маркетинг </b></a></li>
+
+                    <li><a href="http://codepreneurs.co/"><b>Програмирање</b></a></li>
+                    <li><a href="https://www.brainster.io/data-science"><b>Data Science</b></a></li>
+                    <li><a href="https://www.brainster.io/design"><b>Дизајн</b></a></li>
+                    <li><a href="contact_form.html" class="btn">Вработи наш студент</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid fifth">
+        <h1 class="text-center">Вработи студенти</h1>
+        <form action="contact.php" method="POST">
+            <div class="row  col-md-offset-3">
+                <div class="col-md-4">
+
+                    <div class="form-group name">
+                        <label for="name">Име и презиме</label>
+                        <input name="name" type="text" class="form-control" id="name"
+                        required placeholder="Вашето име и презиме">
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="form-group company">
+                        <label for="company">Име на компанија</label>
+                        <input name="company" type="text" class="form-control" id="company"
+                        required placeholder="Име на вашата компанија">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row  col-md-offset-3">
+                <div class="col-md-4">
+
+                    <div class="form-group email">
+                        <label for="email">Контакт имејл</label>
+                        <input name="email" type="text" class="form-control" id="email"
+                        required placeholder="Контакт имејл на вашата компанија">
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="form-group number">
+                        <label for="phone">Контакт телефон</label>
+                        <input name="phone" type="text" class="form-control" id="phone"
+                        required placeholder="Контакт телефон на вашата компанија">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row  col-md-offset-3">
+                <div class="col-md-4">
+                    <div class="dropdown">
+                        <label for="dropdownMenu1">Тип на студенти</label>
+                        <select class="form-control" name="type" required >
+                            <option value="" disabled selected>Изберете тип на студент</option>
+                            <option value="Маркетинг">Студенти од маркетинг</option>
+                            <option value="Програмирање">Студенти од програмирање</option>
+                            <option value="Data Science">Студенти од data science</option>
+                            <option value="Дизајн">Студенти од дизајн</option>
+                        </select>
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-md-4 col-sm-12 col-xs-12 buttonLast">
+                    <button type="submit" class="btn kopce">Испрати</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid fourthDiv">
+        <p class="text-center"><b>Изработено со <span style="font-size:20px;color:red;">&hearts;</span>
+                од студентите на Brainster</b></p>
+    </div>
+
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"></script>
+
+<script>
+    function showSidebar() {
+        let mySidebar = document.querySelector('.sidebar');
+        mySidebar.style.width = '100vw';
+    }
+
+    function closeSidebar() {
+        let mySidebar = document.querySelector('.sidebar');
+        mySidebar.style.width = '0';
+    }
+</script>
+
+
+</html>
